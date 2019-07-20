@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'design.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(372, 227)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(10, 60, 340, 141))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.btnIgual = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnIgual.setObjectName("btnIgual")
+        self.gridLayout.addWidget(self.btnIgual, 3, 2, 1, 1)
+        self.btnTres = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnTres.setObjectName("btnTres")
+        self.gridLayout.addWidget(self.btnTres, 2, 2, 1, 1)
+        self.btnUno = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnUno.setObjectName("btnUno")
+        self.gridLayout.addWidget(self.btnUno, 2, 0, 1, 1)
+        self.btnOcho = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnOcho.setObjectName("btnOcho")
+        self.gridLayout.addWidget(self.btnOcho, 0, 1, 1, 1)
+        self.btnCuatro = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnCuatro.setObjectName("btnCuatro")
+        self.gridLayout.addWidget(self.btnCuatro, 1, 0, 1, 1)
+        self.btnCinco = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnCinco.setObjectName("btnCinco")
+        self.gridLayout.addWidget(self.btnCinco, 1, 1, 1, 1)
+        self.btnDos = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnDos.setObjectName("btnDos")
+        self.gridLayout.addWidget(self.btnDos, 2, 1, 1, 1)
+        self.btnPunto = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnPunto.setObjectName("btnPunto")
+        self.gridLayout.addWidget(self.btnPunto, 3, 1, 1, 1)
+        self.btnSeis = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnSeis.setObjectName("btnSeis")
+        self.gridLayout.addWidget(self.btnSeis, 1, 2, 1, 1)
+        self.btnNueve = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnNueve.setObjectName("btnNueve")
+        self.gridLayout.addWidget(self.btnNueve, 0, 2, 1, 1)
+        self.btnSiete = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnSiete.setObjectName("btnSiete")
+        self.gridLayout.addWidget(self.btnSiete, 0, 0, 1, 1)
+        self.btnMulti = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnMulti.setObjectName("btnMulti")
+        self.gridLayout.addWidget(self.btnMulti, 2, 3, 1, 1)
+        self.btnDivi = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnDivi.setObjectName("btnDivi")
+        self.gridLayout.addWidget(self.btnDivi, 3, 3, 1, 1)
+        self.btnMenos = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnMenos.setObjectName("btnMenos")
+        self.gridLayout.addWidget(self.btnMenos, 1, 3, 1, 1)
+        self.btnMas = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnMas.setObjectName("btnMas")
+        self.gridLayout.addWidget(self.btnMas, 0, 3, 1, 1)
+        self.btnCero = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.btnCero.setObjectName("btnCero")
+        self.gridLayout.addWidget(self.btnCero, 3, 0, 1, 1)
+        self.MostrarDatos = QtWidgets.QLineEdit(self.centralwidget)
+        self.MostrarDatos.setGeometry(QtCore.QRect(20, 10, 321, 41))
+        self.MostrarDatos.setObjectName("MostrarDatos")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Calculadora"))
+        self.btnIgual.setText(_translate("MainWindow", "="))
+        self.btnTres.setText(_translate("MainWindow", "3"))
+        self.btnUno.setText(_translate("MainWindow", "1"))
+        self.btnOcho.setText(_translate("MainWindow", "8"))
+        self.btnCuatro.setText(_translate("MainWindow", "4"))
+        self.btnCinco.setText(_translate("MainWindow", "5"))
+        self.btnDos.setText(_translate("MainWindow", "2"))
+        self.btnPunto.setText(_translate("MainWindow", "."))
+        self.btnSeis.setText(_translate("MainWindow", "6"))
+        self.btnNueve.setText(_translate("MainWindow", "9"))
+        self.btnSiete.setText(_translate("MainWindow", "7"))
+        self.btnMulti.setText(_translate("MainWindow", "*"))
+        self.btnDivi.setText(_translate("MainWindow", "/"))
+        self.btnMenos.setText(_translate("MainWindow", "-"))
+        self.btnMas.setText(_translate("MainWindow", "+"))
+        self.btnCero.setText(_translate("MainWindow", "0"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
